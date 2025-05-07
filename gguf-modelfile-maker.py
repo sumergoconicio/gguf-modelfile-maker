@@ -88,8 +88,8 @@ def main():
     dotenv.load_dotenv(override=True)
     print("--- GGUF Catalog and Modelfile Generator ---")
 
-    default_modelfile_dir = Path("/Users/sumergoconicio/Documents/Code/Models/modelfiles")
-    default_gguf_dir = Path("/Volumes/somatique/AImodels")
+    default_modelfile_dir = Path("/path/to/Ollama/modelfiles/directory")
+    default_gguf_dir = Path("/path/to/LMStudio/gguf/directory")
     modelpath_input = input(f"Enter desired folder path here or leave blank to use default value [{default_gguf_dir}]: ")
     modelfilepath_input = input(f"Enter folder to save .Modelfile stubs or leave blank to use default [{default_modelfile_dir}]: ")
     
